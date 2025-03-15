@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calcule o preço da Instalação</h1>
+
+    <p>Qual o tamanho do Data Center? (Em metros)</p>
+    <input type="number" name="" id="ipt_area">
+
+    <p>Qual o consumo de energia médio do Data Center? (Em Watts)</p>
+    <input type="number" name="" id="ipt_watts">
+    <button onclick="calcular()">Calcular</button>
+
+    <div id="div_exibir"></div>
+</body>
+</html>
+<script>
+    var precoSensor = 10.00;
+    var manutencaoSistema = 500.00;
+    var valorKWH = 0.57790;
+    var porcentualEconomia = 0.30
+
+    function calcular() {
+        var areaDC = Number(ipt_area.value);
+        var watts = Number(ipt_watts.value);
+        var custoInstalacao = areaDC * precoSensor + manutencaoSistema
+
+        // calcula o gasto de energia
+        var energiaDia = (watts * 24) * valorKWH;
+        var energiaMes = energiaDia * 30;
+        var energiaAno = energiaMes * 12;
+
+        // calcula a economia em energia
+        var economiaMes = energiaMes * porcentualEconomia
+        var economiaAno = energiaAno * porcentualEconomia
+
+        div_exibir.innerHTML = `Total a ser gasto com instalação: R$ ${custoInstalacao} junto com o custo de manutenção mensal de: ${manutencaoSistema}
+        <br>O valor estimado em gastos com energia mensalmente: R$ ${economiaMes.toFixed(2)} e por ano: R$ ${economiaAno}
+        `
+
+    }
+</script>

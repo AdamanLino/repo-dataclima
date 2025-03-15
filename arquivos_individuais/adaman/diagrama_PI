@@ -1,0 +1,66 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.16">
+  <diagram id="E3zyloxk97vu53YqNLzq" name="Página-1">
+    <mxGraphModel dx="808" dy="447" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="duxipF4gqkjb2Yvh3BoP-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="duxipF4gqkjb2Yvh3BoP-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="434" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="duxipF4gqkjb2Yvh3BoP-1" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;1. É feita a instalação dos sensores no ambiente dos data centers. Como os corredores, rack e hardware das máquinas&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="90" y="419" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="duxipF4gqkjb2Yvh3BoP-3" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cdn-icons-png.flaticon.com/512/7036/7036641.png;" parent="1" vertex="1">
+          <mxGeometry x="144" y="209" width="152" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="duxipF4gqkjb2Yvh3BoP-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" parent="1" source="duxipF4gqkjb2Yvh3BoP-6" target="duxipF4gqkjb2Yvh3BoP-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="duxipF4gqkjb2Yvh3BoP-6" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;2. Os dados coletados são enviados para o sistema, onde são processados&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="400" y="419" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ci1gekKq6DD8Sgl5Exy4-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870.2857142857144" y="597" as="targetPoint" />
+            <mxPoint x="870" y="455.9999999999999" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="duxipF4gqkjb2Yvh3BoP-13" value="3. Os dados são exibidos no sistema onde são monitorados e exibidos graficamente" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="740" y="419" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="duxipF4gqkjb2Yvh3BoP-21" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cdn-icons-png.flaticon.com/512/3734/3734873.png;" parent="1" vertex="1">
+          <mxGeometry x="760" y="213" width="105.5" height="105.5" as="geometry" />
+        </mxCell>
+        <mxCell id="duxipF4gqkjb2Yvh3BoP-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" parent="1" source="duxipF4gqkjb2Yvh3BoP-34" target="duxipF4gqkjb2Yvh3BoP-36" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="duxipF4gqkjb2Yvh3BoP-34" value="4. Um alerta é gerado caso os dados saiam do padrão" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="746" y="784" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="duxipF4gqkjb2Yvh3BoP-35" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://static-00.iconduck.com/assets.00/alert-icon-2048x1935-lv49434z.png;" parent="1" vertex="1">
+          <mxGeometry x="793.9200000000001" y="599" width="164.15" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="duxipF4gqkjb2Yvh3BoP-36" value="5. O cliente pode tomar uma decisão de regular a temperatura ou fazer uma manutenção preventiva" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="410" y="785" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="duxipF4gqkjb2Yvh3BoP-39" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cdn-icons-png.flaticon.com/512/3176/3176276.png;" parent="1" vertex="1">
+          <mxGeometry x="460" y="595" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="duxipF4gqkjb2Yvh3BoP-42" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cdn-icons-png.flaticon.com/512/5479/5479639.png;" parent="1" vertex="1">
+          <mxGeometry x="840" y="209" width="193" height="193" as="geometry" />
+        </mxCell>
+        <mxCell id="ci1gekKq6DD8Sgl5Exy4-2" value="&lt;font style=&quot;font-size: 23px;&quot;&gt;Sistema de monitoramento de temperatura e umidade em data centers&amp;nbsp;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="80" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ci1gekKq6DD8Sgl5Exy4-3" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cdn-icons-png.flaticon.com/512/8637/8637809.png;" vertex="1" parent="1">
+          <mxGeometry x="464" y="194" width="182" height="182" as="geometry" />
+        </mxCell>
+        <mxCell id="ci1gekKq6DD8Sgl5Exy4-4" value="Adaman Lino Santos&lt;div&gt;RA: 04251087&lt;/div&gt;&lt;div&gt;Gabriel Rapani Torres&lt;/div&gt;&lt;div&gt;RA: 04251115&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="724" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
