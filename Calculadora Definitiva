@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Financeira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculadora">
+        <h2>Calculadora Financeira</h2>
+        <div class="input-group">
+            <p>Quantos m² o datacenter possui?</p>
+            <input type="number" id="ipt_metros" placeholder="Insira a área do datacenter">
+        </div>
+        <div class="input-group">
+            <p>Quantos servidores que serão incluídos no projeto?</p>
+            <input type="number" id="ipt_server" placeholder="Número de servidores">
+        </div>
+        <div class="input-group">
+            <p>Qual o valor gasto com ares-condicionados</p>
+            <input type="number" id="ipt_ares" placeholder="Valor gasto com ares-condicionados">
+        </div>
+        <button onclick="calculo()">Calcular</button>
+        <div id="exibir" class="resultado"></div>
+        <div id="ar" class="resultado"></div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function calculo() {
+        var preco_dht = 10
+        var instalacao = 500
+        var tamanho = Number(ipt_metros.value)
+        var n_servidor = Number(ipt_server.value)
+        var area_dht = 5
+        var custo = preco_dht * (tamanho / area_dht)
+        if (n_servidor <= 1400) {
+            var calc_normal = (preco_dht + instalacao + custo)
+            exibir.innerHTML = `O custo de instalação será de R$${calc_normal}`
+        }else {
+            var calc_discont = (preco_dht + instalacao + custo) * 0.90
+            exibir.innerHTML = `O custo de instalação será de R$${calc_discont}`
+        }
+        
+        // calculos do desconto no ar condicionado
+        var ar = Number(ipt_ares.value)
+        var valorKWH = 0.57
+        var energiaDia = (ar * 24) * valorKWH;
+        var energiaMes = energiaDia * 30;
+        var energiaAno = energiaMes * 12;
+        var porcentualEconomia = 0.30
+        var economiaMes = energiaMes * porcentualEconomia
+        var economiaAno = energiaAno * porcentualEconomia
+
+        ar.innerHTML=`O valor estimado em gastos com energia mensalmente: R$ ${economiaMes.toFixed(2)} e por ano: R$ ${economiaAno}`
+    }
+</script>
