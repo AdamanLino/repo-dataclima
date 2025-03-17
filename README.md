@@ -6,7 +6,7 @@ Implementação do Sistema de Monitoramento com Sensores de Temperatura e Umidad
 
 **Contexto**
 
-Um centro de processamento de dados ou data center é um espaço dedicado para abrigar sistemas de computador e componentes associados, como sistemas de telecomunicações e armazenamento. Os data centers são essenciais para o armazenamento e processamento de informações, exigindo medidas rigorosas de proteção. Além de sistemas contra incêndio e controle de acessos, o controle de temperatura e umidade é crucial para evitar danos estruturais e perda de dados. 
+Um centro de processamento de dados ou data center é um espaço dedicado para abrigar sistemas de computador e componentes associados, como sistemas de telecomunicações e armazenamento. Os data centers são essenciais para o armazenamento e processamento de informações, exigindo medidas rigorosas de proteção. Além de sistemas contra incêndio e controle de acessos, o controle de temperatura e umidade é crucial para evitar danos estruturais e perda de dados.
 
 A ASHRAE (Sociedade Americana de Engenheiros de Aquecimento Refrigeração e Ar-condicionado) recomenda que a umidade relativa do ar nesses ambientes fique entre 45% e 55%, com temperatura inferior a 30°C. A falta desse controle pode causar diversos problemas, como:
  1 - Oxidação de fios e cabos, levando a falhas nos servidores e downtime, como ocorreu com o Facebook em 2011. 

@@ -43,7 +43,7 @@
             var calc_normal = (preco_dht + instalacao + custo_metro)
             exibir.innerHTML = `O custo de instalação será de: R$ ${calc_normal.toFixed(2)}`
         } else {
-            var calc_discont = (preco_dht + instalacao + custo_metro) * 0.90 // aplica um desconto de 10%
+            var calc_discont = (preco_dht + instalacao + custo_metro) * 1.10 // aplica um aumento de 10%
             exibir.innerHTML = `O custo de instalação será de: R$ ${calc_discont.toFixed(2)}`
         }
         
