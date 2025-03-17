@@ -29,7 +29,8 @@ Por intermédio de sensores de temperatura e umidade instalados em pontos estrat
 
 **Justificativa** 
 
-Investir no controle automatizado de temperatura e umidade de data centers é essencial para garantir a segurança operacional e eficiência dos sistemas, além de reduzir custos operacionais e prolongar a vida útil dos equipamentos garantido a marca da empresa por manter os dados seguros. 
+Investir no controle automatizado de temperatura e umidade de data centers é essencial para garantir a segurança operacional e eficiência dos sistemas, além de reduzir custos operacionais e prolongar a vida útil dos equipamentos garantido a marca da empresa por manter os dados seguros. O incêndio no data center da OVHcloud em Estrasburgo, em 2021, causou prejuízos à empresa francesa.
+A OVHcloud foi condenada a pagar € 250 mil a duas empresas que perderam dados no incêndio. O incêndio destruiu e danificou quatro grandes centros de dados da OVHcloud. 
 
 **Escopo**
 
