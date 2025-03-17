@@ -1,8 +1,4 @@
-# repo-projeto
-
-Implementação do Sistema de Monitoramento com Sensores de Temperatura e Umidade nos Data Centers 
-
- 
+# Implementação do Sistema de Monitoramento com Sensores de Temperatura e Umidade nos Data Centers
 
 **Contexto**
 
