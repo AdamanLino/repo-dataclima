@@ -10,7 +10,7 @@
     <div class="calculadora">
         <h2>Calculadora Financeira</h2>
         <div class="input-group">
-            <p>Quantos m² o datacenter possui?</p>
+            <p>Quantos m² o data center possui?</p>
             <input type="number" id="ipt_metros" placeholder="Insira a área do datacenter">
         </div>
         <div class="input-group">
@@ -40,10 +40,10 @@
 
         // calculos do custo de instalação
         if (n_servidor <= 1400) {
-            var calc_normal = (preco_dht + instalacao + custo_metro)
+            var calc_normal = instalacao + custo_metro
             exibir.innerHTML = `O custo de instalação será de: R$ ${calc_normal.toFixed(2)}`
         } else {
-            var calc_discont = (preco_dht + instalacao + custo_metro) * 1.10 // aplica um aumento de 10%
+            var calc_discont = (instalacao + custo_metro) * 1.10 // aplica um aumento de 10%
             exibir.innerHTML = `O custo de instalação será de: R$ ${calc_discont.toFixed(2)}`
         }
         
@@ -57,6 +57,6 @@
         var economiaMes = energiaMes * porcentualEconomia
         var economiaAno = energiaAno * porcentualEconomia
 
-        exibir_ar.innerHTML += `O valor estimado em economia com energia mensalmente: R$ ${economiaMes.toFixed(2)} e por ano: R$ ${economiaAno.toFixed(2)}`
+        exibir_ar.innerHTML = `O valor estimado em economia com energia mensalmente: R$ ${economiaMes.toFixed(2)} e por ano: R$ ${economiaAno.toFixed(2)}`
     }
 </script>
