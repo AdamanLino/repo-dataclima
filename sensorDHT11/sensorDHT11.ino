@@ -30,9 +30,9 @@ void loop(){
     Serial.print(" ");
     Serial.print("Temperatura:");
     Serial.print(temperatura);
-    Serial.println(" ");
+    Serial.print(" ");
     Serial.print("TempMinimo:");
-    Serial.print(25);
+    Serial.print(10);
     Serial.print(" ");
     
     Serial.print("UmiMaximo:");
@@ -40,10 +40,10 @@ void loop(){
     Serial.print(" ");
     Serial.print("Umidade:");
     Serial.print(umidade);
-    Serial.println(" ");
+    Serial.print(" ");
     Serial.print("UmiMinimo:");
     Serial.print(45);
-    Serial.print(" ");
+    Serial.println(" ");
   }
 
   delay(1000);  // Espera 1 segundo
