@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Informe o tamanho em metros quadrados do datacenter do cliente:</p>
+    <input type="number" id="ipt_tamanho_datacenter">
+    <p>Qual o modelo de sensor que será usado:</p>
+    <input type="text" id="ipt_tipo_sensor" placeholder="DHT11" value="DHT11">
+    <button onclick="Calcular()">Calcular</button>
+    <br>
+    <div id="caixa_resposta"></div>
+</body>
+
+</html>
+<script>
+    function Calcular() {
+        var tamanho_datacenter = Number(ipt_tamanho_datacenter.value);
+        var tipo_sensor = ipt_tipo_sensor.value;
+        var resp = caixa_resposta;
+
+        // Utilizado como exemplo, o ar condicionado Schneider Electric - InRow DX, potência média e potência máxima.
+        ar_cond_kwh = 4;
+        ar_cond_potencia_max_kwh = 4.5;
+
+        valor_sensor = 8.9;
+        tamanho_sensor = 10;
+
+        quantidade_sensor = tamanho_datacenter / tamanho_sensor;
+        preco_total = valor_sensor * quantidade_sensor;
+
+        valor_kwh = 0.6;
+
+        ar_cond_24h_porcentagem = ((ar_cond_potencia_max_kwh - ar_cond_kwh) / ar_cond_potencia_max_kwh) * 100;
+
+
+        resp.innerHTML = `O data center de tamanho ${tamanho_datacenter}m2 vai precisar de ${quantidade_sensor} sensor(es) com o custo unitário de R$${valor_sensor}.<br>
+        O projeto vai custar R$${preco_total}.<br>
+        É possível economizar até ${ar_cond_24h_porcentagem.toFixed(2)}% com o consumo de energia dos ares-condicionados.`;
+    }
+</script>
