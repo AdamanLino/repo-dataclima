@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Financeira Datacenter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculadora">
+        <h2>Calculadora Financeira Datacenter</h2>
+
+        <div class="input-group">
+            <label for="arduinoModelo">Modelo do Arduino:</label>
+            <input placeholder="insira modelo" type="text" id="arduinoModelo" value="Arduino Uno">
+        </div>
+
+        <div class="input-group">
+            <label for="sensorModelo">Modelo do Sensor:</label>
+            <input placeholder="insira sensor" type="text" id="sensorModelo" value="DHT11">
+        </div>
+
+        <div class="input-group">
+            <label for="datacenterArea">Área do Datacenter (m²):</label>
+            <input placeholder="insira area (m²)" type="number" id="datacenterArea" value="100">
+        </div>
+
+        <button onclick="calcular()">Calcular Custo</button>
+
+        <div class="resultado" id="resultado"></div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var arduinoModelo = document.getElementById('arduinoModelo').value;
+        var sensorModelo = document.getElementById('sensorModelo').value;
+        var datacenterArea = parseFloat(document.getElementById('datacenterArea').value);
+
+
+        var custoArduino, custoSensor, custoInstalacao, custoTotal;
+
+        if (arduinoModelo.toLowerCase() == 'arduino uno') {
+            custoArduino = 30;
+        } else if (arduinoModelo.toLowerCase() == 'arduino mega') {
+            custoArduino = 50;
+        } else {
+            custoArduino = 40;
+        }
+
+        if (sensorModelo.toLowerCase() == 'dht11') {
+            custoSensor = 5;
+        } else if (sensorModelo.toLowerCase() == 'dht22') {
+            custoSensor = 10;
+        } else {
+            custoSensor = 7;
+        }
+
+        custoInstalacao = datacenterArea * 0.5;
+        custoTotal = custoArduino + custoSensor + custoInstalacao;
+
+        resultado.innerHTML = `Custo estimado: R$${custoTotal.toFixed(2)}`;
+    };
+
+</script>
